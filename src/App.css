@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  --bg-color: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-color: #333333;
+}
+
+::selection {
+  color: #f1f5fd;
+  background: #9385eb;
+}
+
+/************ Start Global Code *************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.section-title h2 {
+  font-size: 3.3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.row-padding {
+  padding-top: 3.5rem;
+}
+
+/*********** Start Main Code ***********/
+.navbar-bg {
+  background: var(--bg-color);
+  padding: 1.7rem 0;
+  z-index: 99;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #212f3d !important;
+}
+
+.navbar li {
+  padding: 0 2rem;
+}
+
+.navbar li a {
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  text-shadow: 0 0.2rem 0.3rem rgba(199, 191, 248, 0.5);
+  transition: 0.5s;
+  color: #6B6B72 !important;
+}
+
+.navbar li .active{
+  color: var(--primary-color) !important;
+}
+
+.navbar li a:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar button.btn-style {
+  font-size: 14px;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  color: #fff;
+  background: var(--primary-color);
+  text-transform: capitalize;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.navbar button.btn-style:hover {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.navbar button.btn-style-bdr {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.navbar button.btn-style-bdr:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.collapse.navbar-collapse.show {
+	padding: 3.5rem 20px;
+	width: 144%;
+}
+
+/************ Main Hero ************/
+.main-hero {
+  height: 100vh;
+  padding-top: 6rem;
+  background: var(--bg-color);
+}
+
+.display-2 {
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  line-height: 6rem;
+  font-weight: bolder;
+}
+
+.main-para {
+  padding-bottom: 20px;
+  font-size: 1.4rem;
+  width: 76%;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 25px;
+}
+
+.main-hero h3 {
+  text-transform: capitalize;
+  color: #6f6f6f;
+}
+
+.input-group input {
+  width: 45% !important;
+  padding: 13px 20px !important;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #444447;
+}
+
+.input-group-text {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  padding: 0 20px;
+  border-radius: 30px !important;
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: -8rem !important;
+}
+
+.input-group-text:hover {
+  background: #6150cc !important;
+}
+
+.hero-images {
+  margin-top: -12rem;
+  position: relative;
+}
+
+.hero-images img.hero-img-bor {
+  width: 60%;
+  height: 82%;
+  margin-top: 10rem;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+  position: absolute;
+  left: 8rem;
+  top: 5rem;
+}
+
+.hero-images img.hero-img-bor2 {
+  width: 48%;
+  height: 35%;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+  position: absolute;
+  left: 26rem;
+  top: 12rem;
+}
+
+/************ Main features ************/
+.main-features {
+  background: #fff;
+  border-bottom: 3px solid #e8ecf4;
+}
+
+.features-box {
+  text-align: center;
+  border-right: 4px solid #f3f3f3;
+  padding: 4.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(177, 177, 177, 0.25);
+  transition: 0.3s;
+}
+
+.features-box:hover {
+  box-shadow: 0 0 15px 0 rgba(161, 161, 161, 0.3);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.features-box .features-icon {
+  background: #f1f5fd;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: auto;
+  margin-top: -2rem;
+  position: relative;
+}
+
+.features-box .features-icon i {
+  padding: 20px;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  position: absolute;
+  left: -0.6rem;
+  top: -0.5rem;
+}
+
+.features-box .features-info {
+  padding-top: 3rem;
+}
+
+.features-info h3.ser-title {
+  font-size: 2rem;
+  padding-bottom: 15px;
+}
+
+.features-info p.main-para {
+  margin-left: 4rem;
+  color: var(--text-color);
+}
+
+/************ About Section ************/
+.main-about {
+  padding: 7rem 0;
+}
+
+.about-content-title {
+  padding-bottom: 3rem;
+}
+
+.about-content-title p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 3rem 0;
+}
+
+.about-content-title h3 {
+  margin-top: -1.1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.main-about .about-img img {
+  width: 40%;
+  height: 70%;
+  margin-top: 16rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.8rem 0.8rem;
+  border-radius: 10px;
+}
+
+.about-content-list {
+  text-align: left;
+  padding: 10px 5px;
+}
+
+.about-list-number {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-right: 2rem;
+}
+
+.about-list-info h2 {
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.main-about button.about-btn {
+  font-size: 14px;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.5s;
+}
+
+.main-about button.about-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/************ Main Services Code ************/
+.main-services .section-title h2 {
+  font-size: 3rem;
+}
+
+.services-box {
+  background: #fff;
+  margin: 2rem 15px;
+  width: 30%;
+  border-radius: 7px;
+  box-shadow: 0 0 5px 0 #d6d4d4;
+  padding: 30px 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.services-box:hover {
+  background: #f1f5fd;
+}
+
+.services-box .ser-icon {
+  padding: 20px 0;
+}
+
+.services-box .ser-icon i {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  border-radius: 50%;
+  background: #f1f5fd;
+  height: 5rem;
+  width: 5rem;
+  display: grid;
+  place-items: center;
+  transition: 0.3s;
+}
+
+.services-box:hover .ser-icon i {
+  background: #fff;
+}
+
+.services-box .ser-info {
+  padding-top: 10px;
+}
+
+.ser-info h3.ser-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+/************ Contact Form ************/
+.contact-form-container {
+  padding: 8rem 0;
+}
+
+.contact-form-content {
+  padding: 2rem 2.5rem;
+}
+
+.contact-form-title {
+  padding-bottom: 1rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.contact-form-img img {
+  width: 70%;
+}
+
+.contact-form {
+  padding: 3.2rem 3rem;
+}
+
+.contact-form .form-group {
+  padding-bottom: 2.5rem;
+}
+
+.contact-form .form-group textarea,
+.contact-form .form-group input {
+  background: #fff;
+  border: 1px solid #ced4da;
+  padding: 25px 15px;
+  margin-right: 3rem;
+  width: 45%;
+  height: 4.2rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.5s;
+}
+
+.contact-form .form-group textarea:focus,
+.contact-form .form-group input:focus {
+  border-color: var(--primary-color);
+}
+
+.contact-form .form-group input.user-address,
+.contact-form .form-group textarea {
+  width: 95%;
+}
+
+.contact-form .form-group textarea {
+  height: 15rem;
+}
+
+.input-checkBox input {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.contact-form button.submit-btn {
+  width: 75%;
+  padding: 8px 20px;
+  font-size: 1.6rem;
+  color: #fff;
+  background: var(--primary-color);
+  text-transform: capitalize;
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  transition: 0.5s;
+  margin-left: 7.5rem;
+  margin-top: 1rem;
+}
+
+.contact-form button.submit-btn:hover {
+  color: var(--main-color);
+  background: transparent;
+  border: 1px solid var(--primary-color);
+}
+
+/************ Main Footer Code  ************/
+.main-footer {
+  background: #5f4fc7;
+}
+
+.footer-item {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+h3.footer-title {
+  color: #fff;
+  padding-bottom: 15px;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+
+.footer-lists ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-lists ul li {
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.social-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-links ul li a {
+  font-size: 1.8rem;
+  color: #ced4da;
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.social-links ul li a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.footer-text{
+  text-align: center;
+  border-top: 1px solid rgb(182, 181, 181);
+}
+
+.footer-text p{
+  color: #ced4da;
+  font-size: 1.6rem;
+  padding: 1.5rem 0;
+}
+
+/************ Error page code ************/
+.error-container {
+	height: 65vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  background: var(--bg-color);
+}
+
+.error-heading {
+	font-size: 16rem;
+	font-weight: bold;
+	margin-top: -5rem;
+}
+
+.error-title{
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+
+/************ Responsive Code ************/
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px !important;
+  }
+}
